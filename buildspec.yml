@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Starting Build"
+  build:
+    commands:
+      - echo "This is a test build for CodeBuild."
+  post_build:
+    commands:
+      - echo "Build Completed!"
+artifacts:
+  files:
+    - '**/*'
